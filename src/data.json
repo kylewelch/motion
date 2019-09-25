@@ -104,9 +104,9 @@
     },
     {
       "id": 8,
-      "questionText": "When an element is ",
-      "questionText2": "coming to a stop",
-      "questionText3": ", which type of easing should you use?",
+      "questionText": "Which graph shows an element’s speed during an ",
+      "questionText2": "ease-in",
+      "questionText3": " animation?",
       "questionHasSpecialTerm": true,
       "answerOptions": [0, 1],
       "correctAnswer": 0,
