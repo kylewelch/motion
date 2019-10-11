@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="43px" viewBox="0 0 63 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.11" transform="translate(-247.000000, -439.000000)" fill="#555657">
+            <g id="Group-2" transform="translate(247.000000, 439.000000)">
+                <text id="Option-2" font-family="Fieldwork-Geo-Light, Fieldwork" font-size="16" font-weight="300">
+                    <tspan x="0" y="39">Option 2</tspan>
+                </text>
+                <polygon id="Triangle-Copy" transform="translate(31.500000, 9.500000) rotate(90.000000) translate(-31.500000, -9.500000) " points="31.5 2 41 17 22 17"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

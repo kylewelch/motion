@@ -6,7 +6,9 @@ import './App.css';
 function App() {
   return (
     <div class="container">
-      <Lesson />
+      <Lesson 
+        lesson={1} 
+      />
     </div>
   );
 }
