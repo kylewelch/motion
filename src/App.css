@@ -33,10 +33,13 @@ body {
 
 .progress-bar-container {
   padding: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .question-container {
   padding: 0 30px 30px;
+
 }
 
 .prog-bar-bg {
@@ -53,6 +56,19 @@ body {
   background-color: #4194FC;
   transition: .2s;
   transition-timing-function: ease-out;
+}
+
+.close-lesson {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  opacity: .7;
+}
+
+.close-lesson:hover {
+  cursor: pointer;
 }
 
 .vid-bg {
@@ -212,4 +228,79 @@ img {
 
 .img-btn {
   padding: 25px 25px 15px 20px;
+}
+
+.summary-cta {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  background-color: #4194FC;
+  margin: 20px auto;
+}
+
+.summary-cta:hover {
+  cursor: pointer;
+}
+
+.summary-cta-secondary {
+  padding: 15px;
+  text-align: center;
+  color: #828282;
+  background-color: #eeeff2;
+  margin: 20px auto;
+}
+
+.summary-cta-secondary:hover {
+  cursor: pointer;
+}
+
+
+/* Path Styles */
+
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.pathHeading {
+  margin: 0;
+}
+
+.pathSubHeading {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.lessonLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.lessonLink:hover {
+  cursor: pointer;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #9797b1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-locked {
+  background-color: #E4E4F0;
+}
+
+.lesson-label {
+  font-size: 1.3em;
+  font-weight: 500;
 }

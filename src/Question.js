@@ -7,7 +7,7 @@ import TextButton from './TextButton.js'
 import ImageButton from './ImageButton.js'
 import Feedback from './Feedback.js'
 
-let lessonData = require('./data.json')
+let lessonData = require('./lesson1.json')
 
 class Question extends Component {
   constructor(props) {
@@ -23,6 +23,7 @@ class Question extends Component {
   giveFeedback() {
     if (this.props.selected_answer === this.props.question_data.correctAnswer) {
       this.setState({correctAnswer: true})
+      this.props.tallyCorrectAnswer(this.props.lessonNumber - 1)
     }
     this.setState({giveFeedback: true})
   }

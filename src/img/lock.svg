@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="37px" viewBox="0 0 28 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>🎨 Color</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M198.5,598.333333 L196.75,598.333333 L196.75,594.809524 C196.75,589.946667 192.83,586 188,586 C183.17,586 179.25,589.946667 179.25,594.809524 L179.25,598.333333 L177.5,598.333333 C175.575,598.333333 174,599.919048 174,601.857143 L174,619.47619 C174,621.414286 175.575,623 177.5,623 L198.5,623 C200.425,623 202,621.414286 202,619.47619 L202,601.857143 C202,599.919048 200.425,598.333333 198.5,598.333333 Z M187.5,614 C185.575,614 184,612.425 184,610.5 C184,608.575 185.575,607 187.5,607 C189.425,607 191,608.575 191,610.5 C191,612.425 189.425,614 187.5,614 Z M182,598 L182,594.4 C182,591.412 184.456667,589 187.5,589 C190.543333,589 193,591.412 193,594.4 L193,598 L182,598 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8-Copy-23" transform="translate(-174.000000, -586.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="🎨-Color" fill="#FFFFFF" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

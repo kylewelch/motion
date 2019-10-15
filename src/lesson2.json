@@ -1,0 +1,50 @@
+{
+  "questions": [
+    {
+      "id": 2,
+      "questionText": "What makes the top animation more realistic?",
+      "questionHasSpecialTerm": false,
+      "answerOptions": [0, 1],
+      "correctAnswer": 1,
+      "animation": "",
+      "animationType": "static",
+      "buttonType": "text",
+      "buttonText": ["It's a ", "It has "],
+      "buttonText2": ["linear animation", "easing"],
+      "buttonText3": [". (As the car moves, its speed never changes)", ". (The car slows down before stopping and speeds up after stopping)"],
+      "feedbackCorrect": "You betcha. Let's keep moving",
+      "feedbackIncorrect": "Almost! Let's keep moving"
+    },
+    {
+      "id": 3,
+      "questionText": "Select the animation that has ",
+      "questionText2": "easing",
+      "questionText3": ":",
+      "questionHasSpecialTerm": true,
+      "answerOptions": [0, 1],
+      "correctAnswer": 1,
+      "animation": "",
+      "animationType": "verticalButton",
+      "buttonType": "animation",
+      "feedbackCorrect": "Way to go! Now let's apply this to UI design",
+      "feedbackIncorrect": "Oops. 'Easing' means the that element accelerates or decelerates"
+    },
+    {
+      "id": 4,
+      "questionText": "Which type of animation should you use when adding motion to a UI?",
+      "questionText2": "",
+      "questionText3": "",
+      "questionHasSpecialTerm": false,
+      "answerOptions": [0, 1],
+      "correctAnswer": 1,
+      "animation": "ui",
+      "animationType": "toggle",
+      "buttonType": "text",
+      "buttonText": ["", "Animations with "],
+      "buttonText2": ["Linear", "Easing"],
+      "buttonText3": [" Animations", ""],
+      "feedbackCorrect": "Look at you, smartypants!",
+      "feedbackIncorrect": "Oops. It's actually best to avoid linear animations"
+    }
+  ]
+}
