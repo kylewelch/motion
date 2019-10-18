@@ -18,6 +18,13 @@ class Lesson extends Component {
   closeLesson() {
     this.props.closeLesson()
   }
+  retakeLesson() {
+    this.setState({
+      question: 0,
+      answers: [null, null, null, null, null, null, null, null, null, null, null],
+      lessonComplete: false
+    })
+  }
   storeAnswer(answer) {
     let answers = this.state.answers.slice();
     answers[this.state.question] = answer;
@@ -45,7 +52,9 @@ class Lesson extends Component {
         <Summary 
           closeLesson={this.closeLesson.bind(this)}
           totalCorrectAnswers={this.props.totalCorrectAnswers}
+          percentCorrect={this.props.totalCorrectAnswers / lessonData.questions.length}
           data={lessonData}
+          restartLesson={this.retakeLesson.bind(this)}
         />
       );
     }
