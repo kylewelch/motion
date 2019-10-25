@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Lesson from './Lesson.js'
 import Path from './Path.js'
+import Intro from './Intro.js'
 import logo from './logo.svg';
 import './App.css';
 
@@ -8,11 +9,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: "path",
+      display: "intro",
       lessonStatus: ["incomplete", "locked", "locked", "locked"],
       lessonScores: [0, 0, 0, 0],
       unlockedLessons: 2
     }
+  }
+  startPath() {
+    this.setState({display: 1})
   }
   openLesson(lesson) {
     if (this.state.lessonStatus[lesson - 1] != "locked") {
@@ -22,6 +26,11 @@ class App extends Component {
   tallyCorrectAnswer(lesson) {
     let scores = this.state.lessonScores.slice()
     scores[lesson]++
+    this.setState({lessonScores: scores})
+  }
+  resetScores(lesson) {
+    let scores = this.state.lessonScores.slice()
+    scores[lesson] = 0
     this.setState({lessonScores: scores})
   }
   closeLesson() {
@@ -41,6 +50,11 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        {(this.state.display === "intro") && 
+          <Intro 
+            startPath={this.startPath.bind(this)}
+          />
+        }
         {(this.state.display === "path") && 
           <Path 
             openLesson={this.openLesson.bind(this)}
@@ -52,6 +66,7 @@ class App extends Component {
             lessonNumber={this.state.display}
             tallyCorrectAnswer={this.tallyCorrectAnswer.bind(this)}
             totalCorrectAnswers={this.state.lessonScores[this.state.display - 1]}
+            resetScores={this.resetScores.bind(this)}
             closeLesson={this.closeLesson.bind(this)}
             showSummary={this.showSummary.bind(this)}
             updateLessonStatus={this.updateLessonStatus.bind(this)}

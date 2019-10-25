@@ -6,6 +6,7 @@ import ConfirmButton from './ConfirmButton.js'
 import TextButton from './TextButton.js'
 import ImageButton from './ImageButton.js'
 import Feedback from './Feedback.js'
+import Video from './Video.js'
 
 let lessonData = require('./lesson1.json')
 
@@ -78,6 +79,10 @@ class Question extends Component {
                 question_complete={this.state.giveFeedback}
                /> 
           : (this.props.question_data.animationType === "none") ? null 
+          : (this.props.question_data.animationType === "video") ? 
+            <Video
+              question_data={this.props.question_data}
+              />
           : (this.props.question_data.animationType === "singleStatic") ? 
               <AnimationButton 
                 question_data={this.props.question_data}

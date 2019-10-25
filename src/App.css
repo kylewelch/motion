@@ -290,7 +290,7 @@ img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #9797b1;
+  background-color: #4194FC;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -300,7 +300,48 @@ img {
   background-color: #E4E4F0;
 }
 
+.circle-completed {
+  opacity: .8;
+  background-color: #9797b1;
+}
+
 .lesson-label {
   font-size: 1.3em;
   font-weight: 500;
+}
+
+/* Path Intro */
+
+.top-img {
+  background-color: #D5D9DE;
+  padding: 20px 30px;
+  margin-bottom: 25px;
+}
+
+.placeholder-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+}
+
+.intro-header {
+  margin: 0;
+  opacity: .8;
+}
+
+.intro-paragraph {
+  font-size: 1.2em;
+  opacity: .8;
+}
+
+.intro-cta {
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.summary-header {
+  padding: 30px 0;
 }

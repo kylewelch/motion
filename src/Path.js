@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Link from './Link.js'
 
-const lessons = ["Easing Basics", "Easing Practice", "Timing", "Challenge 1"]
+const lessons = ["Intro to Motion", "Easing Basics", "Easing Practice", "Timing"]
 
 class Path extends Component {
   constructor(props) {

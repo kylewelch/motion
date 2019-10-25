@@ -1,0 +1,81 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "How does motion improve this UX?",
+      "questionHasSpecialTerm": false,
+      "answerOptions": [0, 1],
+      "correctAnswer": 1,
+      "animation": "noMotion1",
+      "animationType": "singleStatic",
+      "buttonType": "text",
+      "buttonText": ["It doesn't improve the UX. It actually makes it more confusing to use.", "It clarifies what will happen when you try to interact with the elements on the screen."],
+      "buttonText2": ["", ""],
+      "buttonText3": ["", ""],
+      "feedbackCorrect": "Yep! motion makes it much easier to understand the available actions.",
+      "feedbackIncorrect": "Actually, motion clarifies the available actions and their outcomes."
+    },
+    {
+      "id": 2,
+      "questionText": "True or False: The only purpose of motion in UX design is to add ",
+      "questionText2": "delight",
+      "questionText3": " to the user experience",
+      "questionHasSpecialTerm": true,
+      "answerOptions": [0, 1],
+      "correctAnswer": 1,
+      "animation": "swipe",
+      "animationType": "none",
+      "buttonType": "text",
+      "buttonText": ["",""],
+      "buttonText2": ["True", "False"],
+      "buttonText3": ["", ""],
+      "feedbackCorrect": "That's right! Motion can also greatly enhance the clarity, usability, and value of a product.",
+      "feedbackIncorrect": "Not quite. Motion can also greatly enhance the clarity, usability, and value of a product."
+    },
+    {
+      "id": 3,
+      "questionText": "What happens to this UX when motion is removed?",
+      "questionHasSpecialTerm": false,
+      "answerOptions": [0, 1],
+      "correctAnswer": 0,
+      "animation": "noMotion2",
+      "animationType": "singleStatic",
+      "buttonType": "text",
+      "buttonText": ["Without motion, users don't know how long they'll have to wait, or if the app is even working.", "Without motion, users have a better experience because the UI is simpler"],
+      "buttonText2": ["", ""],
+      "buttonText3": ["", ""],
+      "feedbackCorrect": "Yep! Motion adds clarity and helps set the right expectations",
+      "feedbackIncorrect": "Actually, motion improves the UX because it provides clarity and sets the right expectations."
+    },
+        {
+      "id": 4,
+      "questionText": "True or False: You need to be an After Effects pro to start adding motion to your designs",
+      "questionHasSpecialTerm": false,
+      "answerOptions": [0, 1],
+      "correctAnswer": 1,
+      "animation": "swipe",
+      "animationType": "none",
+      "buttonType": "text",
+      "buttonText": ["",""],
+      "buttonText2": ["True", "False"],
+      "buttonText3": ["", ""],
+      "feedbackCorrect": "Yep! With the right training and tools you can start creating quality motion design in minutes.",
+      "feedbackIncorrect": "Actually, with the right training and tools you can start creating quality motion design in minutes."
+    },
+    {
+      "id": 5,
+      "questionText": "How does motion improve this UX?",
+      "questionHasSpecialTerm": false,
+      "answerOptions": [0, 1],
+      "correctAnswer": 0,
+      "animation": "noMotion4",
+      "animationType": "singleStatic",
+      "buttonType": "text",
+      "buttonText": ["It makes the app more fun and delightful", "It makes the app easier to use"],
+      "buttonText2": ["", ""],
+      "buttonText3": ["", ""],
+      "feedbackCorrect": "Yep! Motion helps celebrate the moment.",
+      "feedbackIncorrect": "Actually in this case, the primary benefit of the motion is to make the experience more delightful."
+    }
+  ]
+}

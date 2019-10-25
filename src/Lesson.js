@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import Progress from './ProgressBar.js'
 import Question from './Question.js'
 import Summary from './Summary.js'
+let lesson0 = require('./lesson0.json')
 let lesson1 = require('./lesson1.json')
 let lesson2 = require('./lesson2.json')
-let lessons = [lesson1, lesson2]
+let lessons = [lesson0, lesson1, lesson2]
 
 class Lesson extends Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class Lesson extends Component {
       answers: [null, null, null, null, null, null, null, null, null, null, null],
       lessonComplete: false
     })
+    this.props.resetScores(this.props.lessonNumber - 1);
   }
   storeAnswer(answer) {
     let answers = this.state.answers.slice();
