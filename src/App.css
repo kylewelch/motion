@@ -224,6 +224,7 @@ img {
 .button-row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .img-btn {
@@ -344,4 +345,27 @@ img {
 
 .summary-header {
   padding: 30px 0;
+}
+
+.correct-bg {
+  background-color: #00D200;
+  opacity: .6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation-name: correctMatch;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.incorrect-bg {
+  background-color: #FC4141;
+  opacity: .6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes correctMatch {
+  0%   {background-color: #00D200; opacity: .6;}
+  90%  {background-color: #00D200; opacity: .6;}
+  100% {background-color: #eeeff2; opacity: .4;}
 }

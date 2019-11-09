@@ -10,8 +10,8 @@ class App extends Component {
     super(props);
     this.state = {
       display: "intro",
-      lessonStatus: ["incomplete", "locked", "locked", "locked"],
-      lessonScores: [0, 0, 0, 0],
+      lessonStatus: ["incomplete", "incomplete", "incomplete"],
+      lessonScores: [0, 0, 0],
       unlockedLessons: 2
     }
   }

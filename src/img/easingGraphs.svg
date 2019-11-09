@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="330px" height="150px" viewBox="0 0 330 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 8</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mockups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.4" transform="translate(-23.000000, -174.000000)">
+            <g id="Group-8" transform="translate(23.000000, 174.000000)">
+                <rect id="Rectangle-Copy-3" fill="#EEEFF2" transform="translate(165.000000, 75.000000) rotate(90.000000) translate(-165.000000, -75.000000) " x="90" y="-90" width="150" height="330"></rect>
+                <g id="Group-4" transform="translate(119.000000, 19.000000)">
+                    <g id="Group-2" transform="translate(0.000000, 39.000000)">
+                        <g id="Group" transform="translate(14.400000, 0.000000)">
+                            <path d="M0.8,53.6143011 C6.26354167,30.4683087 27.3302083,12.601642 64,0.0143011139" id="Path-3" stroke="#4194FC" stroke-width="2.4"></path>
+                            <polyline id="Path-4" stroke="#979797" stroke-width="1.6" points="0 0 0 53.6 64 53.6"></polyline>
+                        </g>
+                        <text id="Progress" transform="translate(6.500000, 26.400000) rotate(-90.000000) translate(-6.500000, -26.400000) " font-family="Fieldwork-Geo-Light, Fieldwork" font-size="9.6" font-weight="300" fill="#000000">
+                            <tspan x="-13.5" y="30.9">Progress</tspan>
+                        </text>
+                        <text id="Time" font-family="Fieldwork-Geo-Light, Fieldwork" font-size="9.6" font-weight="300" fill="#000000">
+                            <tspan x="35.2" y="65.4">Time</tspan>
+                        </text>
+                    </g>
+                    <text id="ease-out" font-family="Fieldwork-Geo-Bold, Fieldwork" font-size="16" font-weight="bold" fill="#000000">
+                        <tspan x="11.4609375" y="18">ease-out</tspan>
+                    </text>
+                </g>
+                <g id="Group-6" transform="translate(227.000000, 19.000000)">
+                    <g id="Group-3" transform="translate(4.000000, 38.000000)">
+                        <g id="Group-2-Copy-2">
+                            <g id="Group" transform="translate(14.400000, 0.000000)" stroke="#979797" stroke-width="1.6">
+                                <polyline id="Path-4" points="0 1 0 54.6 64 54.6"></polyline>
+                            </g>
+                            <text id="Progress" transform="translate(6.500000, 27.400000) rotate(-90.000000) translate(-6.500000, -27.400000) " font-family="Fieldwork-Geo-Light, Fieldwork" font-size="9.6" font-weight="300" fill="#000000">
+                                <tspan x="-13.5" y="31.9">Progress</tspan>
+                            </text>
+                            <text id="Time" font-family="Fieldwork-Geo-Light, Fieldwork" font-size="9.6" font-weight="300" fill="#000000">
+                                <tspan x="35.2" y="66.4">Time</tspan>
+                            </text>
+                        </g>
+                        <text id="?" font-family="Fieldwork-Geo-Regular, Fieldwork" font-size="30" font-weight="normal" fill="#1893FF">
+                            <tspan x="39.5200195" y="34">?</tspan>
+                        </text>
+                    </g>
+                    <text id="ease-in-out" font-family="Fieldwork-Geo-Bold, Fieldwork" font-size="16" font-weight="bold" fill="#000000">
+                        <tspan x="4.5703125" y="18">ease-in-out</tspan>
+                    </text>
+                </g>
+                <g id="Group-5" transform="translate(10.000000, 19.000000)">
+                    <g id="Group-2-Copy" transform="translate(0.000000, 39.000000)">
+                        <g id="Group" transform="translate(14.400000, 0.000000)">
+                            <path d="M0.8,53.6143011 C29.0666667,51.2651837 50.1333333,33.398517 64,0.0143011139" id="Path-3" stroke="#4194FC" stroke-width="2.4"></path>
+                            <polyline id="Path-4" stroke="#979797" stroke-width="1.6" points="0 0 0 53.6 64 53.6"></polyline>
+                        </g>
+                        <text id="Progress" transform="translate(6.500000, 26.400000) rotate(-90.000000) translate(-6.500000, -26.400000) " font-family="Fieldwork-Geo-Light, Fieldwork" font-size="9.6" font-weight="300" fill="#000000">
+                            <tspan x="-13.5" y="30.9">Progress</tspan>
+                        </text>
+                        <text id="Time" font-family="Fieldwork-Geo-Light, Fieldwork" font-size="9.6" font-weight="300" fill="#000000">
+                            <tspan x="35.2" y="65.4">Time</tspan>
+                        </text>
+                    </g>
+                    <text id="ease-in" font-family="Fieldwork-Geo-Bold, Fieldwork" font-size="16" font-weight="bold" fill="#000000">
+                        <tspan x="18.0585938" y="18">ease-in</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

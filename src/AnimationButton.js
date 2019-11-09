@@ -3,14 +3,15 @@ import car1 from './img/test1.gif'
 import car2 from './img/test2.gif'
 import swipe1 from './img/swipe.gif'
 import swipe2 from './img/swipe2.gif'
-import bikeout from './img/bikeout1.gif'
-import bikein from './img/bike1.gif'
-import noMotion1 from './img/noMotion1.gif'
-import noMotion2 from './img/noMotion2.gif'
-import noMotion4 from './img/noMotion4.gif'
+import speedometer1 from './img/speedometer1.gif'
+import speedometer2 from './img/speedometer2.gif'
+import card1 from './img/cards.gif'
+import card2 from './img/cards2.gif'
 
+let speedometers = [speedometer2, speedometer1]
 let cars = [car1, car2]
 let swipes = [swipe1, swipe2]
+let cards = [card1, card2]
 
 class AnimationButton extends Component {
   handleClick() {
@@ -19,28 +20,19 @@ class AnimationButton extends Component {
     }
   };
   renderImage() {
-    switch(this.props.question_data.animation) {
-            case "bikeout":
-              return bikeout;
-              break;
-            case "bikein":
-              return bikein;
-              break;
-            case "swipe":
-              return swipes[this.props.answer_option];
-              break;
-            case "noMotion1":
-              return noMotion1;
-              break;
-            case "noMotion2":
-              return noMotion2;
-              break;
-            case "noMotion4":
-              return noMotion4;
-              break;
-            default:
-              return cars[this.props.answer_option]
-          }
+    switch(this.props.question_data.buttons) {
+      case "easingUI":
+        return swipes[this.props.answer_option];
+        break;
+      case "speedometers":
+        return speedometers[this.props.answer_option];
+        break;
+      case "easingCards":
+        return cards[this.props.answer_option];
+        break;
+      default:
+        return cars[this.props.answer_option]
+    }
   }
   render() {
     return(

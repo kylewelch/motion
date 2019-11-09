@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="93px" height="83px" viewBox="0 0 93 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 3 Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mockups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.4" transform="translate(-46.000000, -393.000000)">
+            <g id="Group-3-Copy-3" transform="translate(41.000000, 394.000000)">
+                <g id="Group-Copy" transform="translate(18.000000, 0.000000)">
+                    <path d="M78,67 C78,64.5302734 40.0972534,63.783313 40.0972534,34.019688 C40.0972534,8.22265625 1,0 1,0" id="Path-3" stroke="#4194FC" stroke-width="3" transform="translate(39.500000, 33.500000) scale(1, -1) translate(-39.500000, -33.500000) "></path>
+                    <polyline id="Path-4" stroke="#979797" stroke-width="2" points="0 0 0 67 80 67"></polyline>
+                </g>
+                <text id="Time-Copy" font-family="Fieldwork-Geo-Light, Fieldwork" font-size="12" font-weight="300" fill="#000000">
+                    <tspan x="44" y="81">Time</tspan>
+                </text>
+                <text id="Progress" transform="translate(8.000000, 27.500000) rotate(-90.000000) translate(-8.000000, -27.500000) " font-family="Fieldwork-Geo-Light, Fieldwork" font-size="12" font-weight="300" fill="#000000">
+                    <tspan x="-16.5" y="32.5">Progress</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

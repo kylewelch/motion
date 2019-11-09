@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import Animation from './Animation.js'
 import AnimationButton from './AnimationButton.js'
 import AnimationToggle from './AnimationToggle.js'
 import VerticalAnimationButton from './VerticalAnimationButton.js'
 import ConfirmButton from './ConfirmButton.js'
 import TextButton from './TextButton.js'
 import ImageButton from './ImageButton.js'
+import MatchingPairs from './MatchingPairs.js'
 import Feedback from './Feedback.js'
 import Video from './Video.js'
 
@@ -39,11 +41,52 @@ class Question extends Component {
       <div>
         <div className="question-container">
           <h1>
-            {this.props.question_data.questionText}
+            {
+              
+              /* Question text */
+              
+              
+              this.props.question_data.questionText}
             {this.props.question_data.questionHasSpecialTerm ? <em className="special-term">{this.props.question_data.questionText2}</em> : null}
             {this.props.question_data.questionHasSpecialTerm ? this.props.question_data.questionText3 : null}
           </h1>
-          {(this.props.question_data.animationType === "button") ? this.props.question_data.answerOptions.map((answer_option, index) => {
+          { 
+            
+            /* Top half of question screen: determine which image or animation (if any) to display */
+            
+            
+            (this.props.question_data.animationType === "toggle") ? 
+              <AnimationToggle 
+                question={this.props.question}
+                selected_answer={this.props.selected_answer} 
+                storeAnswer={this.storeAnswer.bind(this)}
+                question_data={this.props.question_data}
+                question_complete={this.state.giveFeedback}
+               /> 
+              
+            
+            : (this.props.question_data.animationType === "singleStatic") ? 
+              <Animation 
+                question_data={this.props.question_data}
+              /> 
+              
+              
+            : (this.props.question_data.animationType === "multiStatic") ?   this.props.question_data.animationCount.map((count, index) => {
+              return <Animation 
+                      key={index}
+                      question_data={this.props.question_data}
+                      count={count}
+                     /> 
+                  })
+              
+            : null 
+          }
+          {            
+            
+            /* Buttons: determine which type of buttons to display */
+            
+            
+            (this.props.question_data.buttonType === "animation") ? this.props.question_data.answerOptions.map((answer_option, index) => {
               return <AnimationButton 
                       question={this.props.question}
                       key={index}
@@ -55,7 +98,20 @@ class Question extends Component {
                       question_complete={this.state.giveFeedback}
                      /> 
                   }) 
-          : (this.props.question_data.animationType === "verticalButton") ? 
+            
+            
+            : (this.props.question_data.buttonType === "matching") ?
+              <MatchingPairs 
+                question={this.props.question}
+                selected_answer={this.props.selected_answer} 
+                storeAnswer={this.storeAnswer.bind(this)}
+                question_data={this.props.question_data}
+                question_complete={this.state.giveFeedback}
+                giveFeedback={this.giveFeedback.bind(this)}
+              /> 
+            
+            
+            : (this.props.question_data.buttonType === "verticalButton") ? 
             <div class="vertical-animations">
               {this.props.question_data.answerOptions.map((answer_option, index) => {
               return <VerticalAnimationButton 
@@ -70,31 +126,9 @@ class Question extends Component {
                      /> 
                   }) }
             </div>
-          : (this.props.question_data.animationType === "toggle") ? 
-              <AnimationToggle 
-                question={this.props.question}
-                selected_answer={this.props.selected_answer} 
-                storeAnswer={this.storeAnswer.bind(this)}
-                question_data={this.props.question_data}
-                question_complete={this.state.giveFeedback}
-               /> 
-          : (this.props.question_data.animationType === "none") ? null 
-          : (this.props.question_data.animationType === "video") ? 
-            <Video
-              question_data={this.props.question_data}
-              />
-          : (this.props.question_data.animationType === "singleStatic") ? 
-              <AnimationButton 
-                question_data={this.props.question_data}
-              /> 
-          : this.props.question_data.answerOptions.map((answer_option, index) => {
-              return <AnimationButton 
-                      key={index}
-                      answer_option={answer_option}
-                      question_data={this.props.question_data}
-                     /> 
-                  })}
-          {(this.props.question_data.buttonType === "text") ? 
+              
+              
+            : (this.props.question_data.buttonType === "text") ? 
             this.props.question_data.answerOptions.map((answer_option, index) => {
               return <TextButton 
                       question={this.props.question}
@@ -107,6 +141,8 @@ class Question extends Component {
                       question_complete={this.state.giveFeedback}
                      /> 
                   })
+            
+            
           : (this.props.question_data.buttonType === "image") ? 
             <div class="button-row">
               {this.props.question_data.answerOptions.map((answer_option, index) => {
@@ -123,11 +159,21 @@ class Question extends Component {
               })}
             </div>
           : null}
-          <ConfirmButton 
+          
+          
+          { /* Confirmation Button */}
+          
+          
+          {(this.props.question_data.buttonType === "matching") ? null : <ConfirmButton 
             isDisabled={(this.props.selected_answer === null || this.state.giveFeedback)} 
             giveFeedback={this.giveFeedback.bind(this)}
-          />
+          />}
         </div>
+        
+        
+        { /* Feedback message that appears after question is submitted */}
+        
+        
         <Feedback 
           question_data={this.props.question_data} 
           correct_answer={this.state.correctAnswer} 

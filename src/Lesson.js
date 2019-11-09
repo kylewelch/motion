@@ -5,16 +5,18 @@ import Summary from './Summary.js'
 let lesson0 = require('./lesson0.json')
 let lesson1 = require('./lesson1.json')
 let lesson2 = require('./lesson2.json')
-let lessons = [lesson0, lesson1, lesson2]
+let lesson3 = require('./lesson3.json')
+let lessons = [lesson1, lesson2, lesson3]
 
 class Lesson extends Component {
   constructor(props) {
     super(props)
-      this.state = {
-        question: 0,
-        answers: [null, null, null, null, null, null, null, null, null, null, null],
-        lessonComplete: false
-      }
+    this.ref = React.createRef()
+    this.state = {
+      question: 0,
+      answers: Array(lessons[this.props.lessonNumber - 1].questions.length).fill(null),
+      lessonComplete: false
+    }
   }
   closeLesson() {
     this.props.closeLesson()
@@ -22,7 +24,7 @@ class Lesson extends Component {
   retakeLesson() {
     this.setState({
       question: 0,
-      answers: [null, null, null, null, null, null, null, null, null, null, null],
+      answers: Array(lessons[this.props.lessonNumber - 1].questions.length).fill(null),
       lessonComplete: false
     })
     this.props.resetScores(this.props.lessonNumber - 1);
@@ -41,6 +43,7 @@ class Lesson extends Component {
       this.setState((state) => {
         return {question: state.question + 1}
       })
+      this.ref.current.scrollIntoView()
     }
     else {
       this.setState({lessonComplete: true});
@@ -51,18 +54,20 @@ class Lesson extends Component {
     let lessonData = lessons[this.props.lessonNumber - 1]
     if (this.state.lessonComplete) {
       return(
-        <Summary 
-          closeLesson={this.closeLesson.bind(this)}
-          totalCorrectAnswers={this.props.totalCorrectAnswers}
-          percentCorrect={this.props.totalCorrectAnswers / lessonData.questions.length}
-          data={lessonData}
-          restartLesson={this.retakeLesson.bind(this)}
-        />
+        <div ref={this.ref}>
+          <Summary 
+            closeLesson={this.closeLesson.bind(this)}
+            totalCorrectAnswers={this.props.totalCorrectAnswers}
+            percentCorrect={this.props.totalCorrectAnswers / lessonData.questions.length}
+            data={lessonData}
+            restartLesson={this.retakeLesson.bind(this)}
+          />
+        </div>
       );
     }
     else {
       return(
-        <div>
+        <div ref={this.ref}>
           <Progress 
             question={this.state.question}
             closeLesson={this.closeLesson.bind(this)}

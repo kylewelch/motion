@@ -1,0 +1,62 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "questionText": "Select the pairs",
+      "questionHasSpecialTerm": false,
+      "answerValues": ["A", "B", "A", "C", "B", "C"],
+      "correctAnswer": 3,
+      "animation": "none",
+      "animationType": "matching",
+      "buttons": "graphs5",      
+      "buttonType": "matching",
+      "buttonLabels": ["detailed icons", "form inputs", "icon changes", "100 milliseconds", "200 milliseconds", "500 milliseconds"],
+      "feedbackCorrect": "Nicely done",
+      "feedbackIncorrect": "Oops, not quite"
+    },
+    {
+      "id": 1,
+      "questionText": "UI animations should take the ",
+      "questionText2": "least",
+      "questionText3": " possible time without being abrupt or jarring",
+      "questionHasSpecialTerm": true,
+      "answerOptions": [0, 1],
+      "correctAnswer": 0,
+      "animation": "durationChart",
+      "animationType": "singleStatic",
+      "buttons": "text",
+      "buttonType": "text",
+      "buttonText": ["",""],
+      "buttonText2": ["True", "False"],
+      "buttonText3": ["", ""],
+      "feedbackCorrect": "Yep! When an animation is even a little too slow it can make an app feel sluggish",
+      "feedbackIncorrect": "Actually, when an animation is even a little too slow it can make an app feel sluggish"
+    },
+    {
+      "id": 2,
+      "questionText": "Animate this UI by selecting the right easing curve",
+      "questionHasSpecialTerm": false,
+      "answerOptions": [0, 1, 2, 3],
+      "correctAnswer": 2,
+      "animation": "easingToggle2",
+      "animationType": "toggle",
+      "buttons": "graphs4",      
+      "buttonType": "image",
+      "feedbackCorrect": "Nicely done",
+      "feedbackIncorrect": "Oops, not quite"
+    },
+    {
+      "id": 3,
+      "questionText": "Animate this UI by selecting the right easing curve",
+      "questionHasSpecialTerm": false,
+      "answerOptions": [0, 1, 2, 3],
+      "correctAnswer": 3,
+      "animation": "easingToggle",
+      "animationType": "toggle",
+      "buttons": "graphs3",      
+      "buttonType": "image",
+      "feedbackCorrect": "Nicely done",
+      "feedbackIncorrect": "Oops, not quite"
+    }
+  ]
+}

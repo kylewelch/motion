@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="94px" height="83px" viewBox="0 0 94 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
-    <title>Group 3</title>
+<svg width="94px" height="84px" viewBox="0 0 94 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 2</title>
     <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="iPhone-8-Copy-16" transform="translate(-211.000000, -409.000000)">
-            <g id="Group-3" transform="translate(207.000000, 410.000000)">
-                <g id="Group-Copy" transform="translate(17.000000, 0.000000)">
-                    <path d="M0,66.0178764 C52.6666667,68.077105 79,46.4552042 79,1.15217391" id="Path-3" stroke="#4194FC" stroke-width="3" transform="translate(39.500000, 33.652174) scale(1, -1) translate(-39.500000, -33.652174) "></path>
-                    <polyline id="Path-4" stroke="#979797" stroke-width="2" points="1 0 1 67 81 67"></polyline>
+    <g id="Mockups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.7" transform="translate(-63.000000, -408.000000)">
+            <g id="Group-2" transform="translate(58.000000, 410.000000)">
+                <g id="Group" transform="translate(18.000000, 0.000000)">
+                    <path d="M1,67.0178764 C7.82942708,38.0853859 34.1627604,15.7520525 80,0.0178763924" id="Path-3" stroke="#4194FC" stroke-width="3"></path>
+                    <polyline id="Path-4" stroke="#979797" stroke-width="2" points="0 0 0 67 80 67"></polyline>
                 </g>
-                <text id="Time-Copy" font-family="Fieldwork-Geo-Light, Fieldwork" font-size="12" font-weight="300" fill="#000000">
-                    <tspan x="44" y="81">Time</tspan>
+                <text id="Progress" transform="translate(8.000000, 33.500000) rotate(-90.000000) translate(-8.000000, -33.500000) " font-family="Fieldwork-Geo-Light, Fieldwork" font-size="12" font-weight="300" fill="#000000">
+                    <tspan x="-16.5" y="38.5">Progress</tspan>
                 </text>
-                <text id="Speed-Copy" transform="translate(8.000000, 34.000000) rotate(-90.000000) translate(-8.000000, -34.000000) " font-family="Fieldwork-Geo-Light, Fieldwork" font-size="12" font-weight="300" fill="#000000">
-                    <tspan x="-10" y="39">Speed</tspan>
+                <text id="Time" font-family="Fieldwork-Geo-Light, Fieldwork" font-size="12" font-weight="300" fill="#000000">
+                    <tspan x="44" y="81">Time</tspan>
                 </text>
             </g>
         </g>
